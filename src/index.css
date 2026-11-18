@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #eef1ff;
+    background-image:
+      radial-gradient(at 8% 12%, rgba(216, 214, 255, 0.72) 0px, transparent 52%),
+      radial-gradient(at 92% 8%, rgba(224, 231, 255, 0.85) 0px, transparent 48%),
+      radial-gradient(at 85% 92%, rgba(209, 206, 254, 0.75) 0px, transparent 52%),
+      linear-gradient(155deg, #f2f4ff 0%, #eaedff 50%, #e6e9fe 100%);
+    background-attachment: fixed;
+    color: #0f172a;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
